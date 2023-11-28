@@ -9,17 +9,17 @@
 <body>
     <div class="purchase-container">
         <form class="purchase-form" action="#" method="post">
-            <h2>Purchase Information</h2>
+            <h2>Add purchases</h2>
 
             <div class="columns-container">
                 <div class="first_column">
                     <div class="purchase-section">
-                        <label for="purchase-name">Name of Purchase:</label>
+                        <label for="purchase-name">Name of purchases:</label>
                         <input type="text" id="purchase-name" name="purchase-name" required>
                     </div>
 
                     <div class="purchase-section">
-                        <label for="purchase-date">Date of Purchase (dd.mm.yyyy):</label>
+                        <label for="purchase-date">Date of Purchase:</label>
                         <input type="text" id="purchase-date" name="purchase-date" pattern="\d{2}.\d{2}.\d{4}" placeholder="dd.mm.yyyy" required>
                     </div>
                 </div>
@@ -32,20 +32,37 @@
 
                     <div class="purchase-section">
                         <label for="purchase-comment">Comment for Purchase:</label>
-                        <textarea id="purchase-comment" name="purchase-comment" rows="4"></textarea>
+                        <input id="purchase-comment" name="purchase-comment" rows="4"></input>
                     </div>
                 </div>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Add</button>
         </form>
+
         <div class="count-buttons">
-            <button class="count" type="count">Total amount</button>
-            <button class="count" type="count">Submit</button>
-            <button class="count" type="count">Submit</button>
-            <button class="count" type="count">Submit</button>
+            
+            
+            <div class="count-container">
+                <button class="count" type="button" onclick="calculatePerDay()">Calculate Total Sum per Day</button>
+                <div class="count-text" id="perDayResult">You have bought on sum: </div>
+            </div>
+            
+            <div class="count-container">
+                <button class="count" type="button" onclick="calculatePerWeek()">Calculate Total Sum per Week</button>
+                <div class="count-text" id="perWeekResult">You have bought on sum: </div>
+            </div>
+            
+            <div class="count-container">
+                <button class="count" type="button" onclick="calculatePerMonth()">Calculate Total Sum per Month</button>
+                <div class="count-text" id="perMonthResult">You have bought on sum: </div>
+            </div>
+            
+            <div class="count-container">
+                <button class="count" type="button" onclick="calculatePerYear()">Calculate Total Sum per Year</button>
+                <div class="count-text" id="perYearResult">You have bought on sum: </div>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
