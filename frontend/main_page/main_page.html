@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_page.css">
+    <title>Purchase Information</title>
+</head>
+<body>
+    <div class="purchase-container">
+        <form class="purchase-form" action="#" method="post">
+            <h2>Purchase Information</h2>
+
+            <div class="columns-container">
+                <div class="first_column">
+                    <div class="purchase-section">
+                        <label for="purchase-name">Name of Purchase:</label>
+                        <input type="text" id="purchase-name" name="purchase-name" required>
+                    </div>
+
+                    <div class="purchase-section">
+                        <label for="purchase-date">Date of Purchase (dd.mm.yyyy):</label>
+                        <input type="text" id="purchase-date" name="purchase-date" pattern="\d{2}.\d{2}.\d{4}" placeholder="dd.mm.yyyy" required>
+                    </div>
+                </div>
+            
+                <div class="second_column">
+                    <div class="purchase-section">
+                        <label for="purchase-cost">Cost of Purchase:</label>
+                        <input type="number" id="purchase-cost" name="purchase-cost" required>
+                    </div>
+
+                    <div class="purchase-section">
+                        <label for="purchase-comment">Comment for Purchase:</label>
+                        <textarea id="purchase-comment" name="purchase-comment" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="count-buttons">
+            <button class="count" type="count">Total amount</button>
+            <button class="count" type="count">Submit</button>
+            <button class="count" type="count">Submit</button>
+            <button class="count" type="count">Submit</button>
+        </div>
+    </div>
+    
+</body>
+</html>
