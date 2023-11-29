@@ -14,7 +14,7 @@
             <div class="columns-container">
                 <div class="first_column">
                     <div class="purchase-section">
-                        <label for="purchase-name">Name of purchases:</label>
+                        <label for="purchase-name">Name of Purchases:</label>
                         <input type="text" id="purchase-name" name="purchase-name" required>
                     </div>
 
@@ -27,7 +27,7 @@
                 <div class="second_column">
                     <div class="purchase-section">
                         <label for="purchase-cost">Cost of Purchase:</label>
-                        <input type="number" id="purchase-cost" name="purchase-cost" required>
+                        <input type="text" id="purchase-cost" name="purchase-cost" required>
                     </div>
 
                     <div class="purchase-section">
@@ -37,14 +37,14 @@
                 </div>
             </div>
 
-            <button type="submit">Add</button>
+            <button id="add_button" type="submit">Add</button>
         </form>
 
         <div class="count-buttons">
             
             
             <div class="count-container">
-                <button class="count" type="button" onclick="calculatePerDay()">Calculate Total Sum per Day</button>
+                <button class="count" id="day_button" type="button" onclick="calculatePerDay()">Calculate Total Sum per Day</button>
                 <div class="count-text" id="perDayResult">You have bought on sum: </div>
             </div>
             
@@ -64,5 +64,6 @@
             </div>
         </div>
     </div>
+    <script src="main_page.js" defer></script>
 </body>
 </html>

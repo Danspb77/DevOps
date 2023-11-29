@@ -1,31 +1,30 @@
-// Your JavaScript calculation functions will be added here
-function calculateTotalAmount() {
-    // Perform the calculation and update the result element
-    var totalAmountResult = document.getElementById("totalAmountResult");
-    totalAmountResult.textContent = "Total Amount: [calculated value]";
-}
-
-function calculatePerDay() {
-    // Perform the calculation and update the result element
-    var perDayResult = document.getElementById("perDayResult");
-    perDayResult.textContent = "Total Sum per Day: [calculated value]";
-}
-
-function calculatePerWeek() {
-    // Perform the calculation and update the result element
-    var perWeekResult = document.getElementById("perWeekResult");
-    perWeekResult.textContent = "Total Sum per Week: [calculated value]";
-}
-
-function calculatePerMonth() {
-    // Perform the calculation and update the result element
-    var perMonthResult = document.getElementById("perMonthResult");
-    perMonthResult.textContent = "Total Sum per Month: [calculated value]";
-}
-
-function calculatePerYear() {
-    // Perform the calculation and update the result element
-    var perYearResult = document.getElementById("perYearResult");
-    perYearResult.textContent = "Total Sum per Year: [calculated value]";
-}
-</script>
+"use strict";
+// import {} from 
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.purchase_comment_str = exports.purchase_cost_str = exports.purchase_date_str = exports.purchase_name_str = void 0;
+const add_button = document.getElementById("add_button");
+let purchase_name_str = "";
+exports.purchase_name_str = purchase_name_str;
+let purchase_date_str = "";
+exports.purchase_date_str = purchase_date_str;
+let purchase_cost_str = '';
+exports.purchase_cost_str = purchase_cost_str;
+let purchase_comment_str = '';
+exports.purchase_comment_str = purchase_comment_str;
+add_button.addEventListener("click", function () {
+    let purchase_name = document.getElementById("purchase-name");
+    let purchase_date = document.getElementById("purchase-date");
+    let purchase_cost = document.getElementById("purchase-cost");
+    let purchase_comment = document.getElementById("purchase-comment");
+    exports.purchase_name_str = purchase_name_str = purchase_name.value;
+    exports.purchase_date_str = purchase_date_str = purchase_date.value;
+    exports.purchase_cost_str = purchase_cost_str = purchase_cost.value;
+    exports.purchase_comment_str = purchase_comment_str = purchase_comment.value;
+    alert(`Button clicked! ${purchase_name_str}`);
+    // console.log("Password:", password_str);
+});
+const day_button = document.getElementById("day_button");
+const per_day_result = document.getElementById("perDayResult");
+day_button.addEventListener('click', function () {
+    per_day_result.textContent = "variable from import";
+});
