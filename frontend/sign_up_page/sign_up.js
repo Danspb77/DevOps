@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.password_str = exports.email_str = exports.username_str = void 0;
+// Update your TypeScript code to use ES6 modules
 const button = document.getElementById("sign_up_button");
 let username_str = "";
 exports.username_str = username_str;
@@ -17,6 +18,4 @@ button.addEventListener("click", function () {
     exports.password_str = password_str = password.value;
     alert(`Button clicked! ${username_str}`);
     console.log("Password:", password_str);
-    // Now you can see the updated values
-    console.log(username_str, email_str, password_str);
 });

@@ -1,3 +1,4 @@
+// Update your TypeScript code to use ES6 modules
 const button = document.getElementById("sign_up_button") as HTMLButtonElement;
 
 let username_str: string = "";
@@ -15,9 +16,7 @@ button.addEventListener("click", function() {
 
     alert(`Button clicked! ${username_str}`);
     console.log("Password:", password_str);
-
-    // Now you can see the updated values
-    console.log(username_str, email_str, password_str);
 });
 
+// Export individual variables instead of using exports
 export { username_str, email_str, password_str };
