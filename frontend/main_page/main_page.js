@@ -23,17 +23,17 @@ day_button.addEventListener('click', function () {
     per_day_result.textContent = "variable from import";
 });
 var week_button = document.getElementById("week_button");
-var per_week_result = document.getElementById("perDayResult");
+var per_week_result = document.getElementById("perWeekResult");
 week_button.addEventListener('click', function () {
-    per_week_result.textContent = "variable from import";
+    per_week_result.textContent = "variable from importW";
 });
 var month_button = document.getElementById("month_button");
-var per_month_result = document.getElementById("perDayResult");
+var per_month_result = document.getElementById("perMonthResult");
 month_button.addEventListener('click', function () {
-    per_month_result.textContent = "variable from import";
+    per_month_result.textContent = "variable from importM";
 });
 var year_button = document.getElementById("year_button");
-var per_year_result = document.getElementById("perDayResult");
+var per_year_result = document.getElementById("perYearResult");
 year_button.addEventListener('click', function () {
-    per_year_result.textContent = "variable from import";
+    per_year_result.textContent = "variable from importY";
 });
