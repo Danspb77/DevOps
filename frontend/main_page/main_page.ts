@@ -34,3 +34,28 @@ const per_day_result=document.getElementById("perDayResult") as HTMLDivElement
 day_button.addEventListener('click',function(){
     per_day_result.textContent = "variable from import"
 })
+
+
+const week_button=document.getElementById("week_button") as HTMLButtonElement
+const per_week_result=document.getElementById("perDayResult") as HTMLDivElement
+
+week_button.addEventListener('click',function(){
+    per_week_result.textContent = "variable from import"
+})
+
+
+const month_button=document.getElementById("month_button") as HTMLButtonElement
+const per_month_result=document.getElementById("perDayResult") as HTMLDivElement
+
+month_button.addEventListener('click',function(){
+    per_month_result.textContent = "variable from import"
+})
+
+
+const year_button=document.getElementById("year_button") as HTMLButtonElement
+const per_year_result=document.getElementById("perDayResult") as HTMLDivElement
+
+year_button.addEventListener('click',function(){
+    per_year_result.textContent = "variable from import"
+})
+
