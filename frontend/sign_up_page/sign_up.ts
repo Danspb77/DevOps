@@ -1,6 +1,6 @@
-const button = document.getElementById("sign_up_button") as HTMLButtonElement;
+const sign_up_button = document.getElementById("sign_up_button") as HTMLButtonElement;
 
-button.addEventListener("click", function() {
+sign_up_button.addEventListener("click", function() {
     const username = document.getElementById("username") as HTMLInputElement;
     const email = document.getElementById("email") as HTMLInputElement;
     const password = document.getElementById("password") as HTMLInputElement;
@@ -29,7 +29,7 @@ async function sendData(dataToSend: any):Promise<void> {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(dataToSend),
-        });
+        }); 
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
