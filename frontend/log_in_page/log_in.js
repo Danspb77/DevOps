@@ -1,15 +1,15 @@
 "use strict";
 const login_button = document.getElementById("login_button");
 let login_str = "";
-let password_str = "";
+let password_str1 = "";
 login_button.addEventListener("click", function () {
     let login = document.getElementById("username");
     let password = document.getElementById("password");
     login_str = login.value;
-    password_str = password.value;
+    password_str1 = password.value;
     const auth_data = {
         login: login_str,
-        password: password_str
+        password: password_str1
     };
     send_auth_data(auth_data);
     // alert(`Button clicked! ${password_str}`);
@@ -17,7 +17,7 @@ login_button.addEventListener("click", function () {
 });
 async function send_auth_data(auth_data) {
     try {
-        const response = await fetch("/api/login", {
+        const response = await fetch("http://localhost:3000/api/login", {
             method: 'POST',
             headers: {
                 'Content-Type': "application/json",

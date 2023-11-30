@@ -1,7 +1,7 @@
 const login_button = document.getElementById("login_button") as HTMLButtonElement;
 
 let login_str: string ="";
-let password_str: string = "";
+let password_str1: string = "";
 
 login_button.addEventListener("click", function() {
     
@@ -10,11 +10,11 @@ login_button.addEventListener("click", function() {
     let password = document.getElementById("password") as HTMLInputElement;
 
     login_str= login.value;
-    password_str = password.value;
+    password_str1 = password.value;
 
     const auth_data={
         login: login_str,
-        password: password_str
+        password: password_str1
     }
 
     send_auth_data(auth_data)
