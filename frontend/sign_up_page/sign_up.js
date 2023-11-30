@@ -1,6 +1,6 @@
 "use strict";
-const sign_up_button = document.getElementById("sign_up_button");
-sign_up_button.addEventListener("click", function () {
+const sign_up_button1 = document.getElementById("sign_up_button");
+sign_up_button1.addEventListener("click", function () {
     const username = document.getElementById("username");
     const email = document.getElementById("email");
     const password = document.getElementById("password");

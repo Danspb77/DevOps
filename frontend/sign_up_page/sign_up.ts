@@ -1,6 +1,6 @@
-const sign_up_button = document.getElementById("sign_up_button") as HTMLButtonElement;
+const sign_up_button1 = document.getElementById("sign_up_button") as HTMLButtonElement;
 
-sign_up_button.addEventListener("click", function() {
+sign_up_button1.addEventListener("click", function() {
     const username = document.getElementById("username") as HTMLInputElement;
     const email = document.getElementById("email") as HTMLInputElement;
     const password = document.getElementById("password") as HTMLInputElement;
@@ -21,9 +21,9 @@ sign_up_button.addEventListener("click", function() {
     console.log("Password:", password_str);
 });
 
-async function sendData(dataToSend: any):Promise<void> {
+async function sendData(dataToSend: object) {
     try {
-        const response = await fetch('/api/register', {
+        const response = await fetch('http://localhost:3000/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -38,6 +38,6 @@ async function sendData(dataToSend: any):Promise<void> {
         const responseData = await response.json();
         console.log('Response Data:', responseData);
     } catch (error) {
-        console.error('Error:', error.message);
+        console.error('Error:', (error as Error).message);
     }
 }

@@ -23,8 +23,15 @@ add_button.addEventListener("click", function() {
     purchase_comment_str=purchase_comment.value;
     alert(`Button clicked! ${purchase_name_str}`);
     // console.log("Password:", password_str);
+    const purchase_data={
+        user_id: 1,// where i can get it ?
+        category_id: 1,
+        amount: 5000,
+        date: purchase_date_str,
+        description: purchase_comment_str
+    }
+
 });
-export { purchase_name_str, purchase_date_str,purchase_cost_str,purchase_comment_str };
 
 
 
